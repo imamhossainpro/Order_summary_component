@@ -1,0 +1,150 @@
+/* Google Font (Red Hat) */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Color */
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%);
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+  --color_white: #fff;
+  --color_gray: #8a8a8a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 100vh;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale_blue);
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color_white);
+  border-radius: 15px;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.text-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+.text-content h2 {
+  color: var(--dark_blue);
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  color: var(--color_gray);
+}
+
+.plan-box {
+  background-color: var(--very_pale_blue);
+  border-radius: 10px;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.plan-box .music-icon {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.plan-box .music-icon .annual-plan {
+  margin-left: 20px;
+}
+.plan-box .music-icon .annual-plan h5 {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--dark_blue);
+}
+
+.music-icon .annual-plan p {
+  font-size: 14px;
+  color: var(--color_gray);
+}
+.change-link a {
+  font-weight: 900;
+  color: var(--dark_blue);
+  transition: 0.3s ease;
+}
+.change-link a:hover {
+  text-decoration: none;
+  color: var(--bright_blue);
+}
+.buttons-group {
+  margin-top: 25px;
+}
+.buttons-group .process-btn {
+  display: block;
+  text-decoration: none;
+  background-color: var(--bright_blue);
+  color: var(--color_white);
+  font-weight: 700;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin: 25px 0;
+  transition: 0.3s ease-in;
+}
+.buttons-group .process-btn:hover {
+  background-color: var(--desaturated_blue);
+}
+
+.buttons-group .cancel-btn {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desaturated_blue);
+  transition: 0.3s ease;
+}
+
+.buttons-group .cancel-btn:hover {
+  color: var(--dark_blue);
+}
+
+/* Responsive  */
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+    font-size: 14px;
+  }
+  .container {
+    max-width: 88%;
+  }
+  .text-content {
+    padding: 2rem;
+  }
+  .text-content h2 {
+    font-size: 22px;
+  }
+  .plan-box .music-icon {
+    margin-left: 10px;
+  }
+  .plan-box .music-icon .annual-plan {
+    padding: 12px;
+  }
+  .buttons-group .process-btn,
+  .buttons-group.cancel-btn {
+    font-size: 13px;
+  }
+}
