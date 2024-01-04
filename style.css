@@ -108,6 +108,7 @@ body {
   border-radius: 10px;
   margin: 35px 0;
   transition: 0.3s ease-in;
+  box-shadow: 0 10px 7px -2px var(--pale_blue);
 }
 .buttons-group .process-btn:hover {
   background-color: var(--desaturated_blue);
