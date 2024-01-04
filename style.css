@@ -55,6 +55,7 @@ body {
 .text-content p {
   color: var(--color_gray);
   max-width: 300px;
+  line-height: 28px;
   margin: 0 auto;
 }
 
